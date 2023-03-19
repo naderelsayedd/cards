@@ -14,10 +14,12 @@ for(var i = 0 ; i<imgs.length ; i++)
         var imgSrc = eventinfo.target.src ; 
         lightBoxItem.style.backgroundImage = `url(${imgSrc})`
         currentIndexSlide = imgs.indexOf(eventinfo.target)
-        // console.log(currentIndexSlide)
     })
 }
 
+lightBoxContainer.addEventListener("click" , function(){
+    lightBoxContainer.style.display= "none"
+})
 next.addEventListener("click" ,nextslide)
 function nextslide(){
     currentIndexSlide++
