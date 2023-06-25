@@ -16,10 +16,6 @@ for(var i = 0 ; i<imgs.length ; i++)
         currentIndexSlide = imgs.indexOf(eventinfo.target)
     })
 }
-
-lightBoxContainer.addEventListener("click" , function(){
-    lightBoxContainer.style.display= "none"
-})
 next.addEventListener("click" ,nextslide)
 function nextslide(){
     currentIndexSlide++
